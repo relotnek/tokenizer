@@ -15,7 +15,7 @@ class TokenGenerateController < ApplicationController
   end
 
   def strong
-
+    @token = SecureRandom.urlsafe_base64(nil, false)
   end
 
   def login
