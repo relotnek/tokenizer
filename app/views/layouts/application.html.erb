@@ -7,8 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<%= nav_bar fixed: :top, brand: "Tokenizer", responsive: true do %>
+    <%= menu_group do %>
+        <%= menu_item "Weak", login_path %>
+        <%= menu_item "Average", tokenize_mid_path %>
+        <%= menu_item "Strong", tokenize_strong_path %>
+        <%= menu_divider %>
+        <% end %>
+<% end %>
+ <div class="container">
 <%= yield %>
-
+</div>
 </body>
 </html>
