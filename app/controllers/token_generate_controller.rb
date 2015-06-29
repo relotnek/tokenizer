@@ -3,7 +3,7 @@ require 'base64'
 class TokenGenerateController < ApplicationController
   def weak
   	# username + password + small random 
-  	username = "ktoler"
+  	username = "user123"
   	password = "secretsauce"
   	tokenizer = TTokenizer.new()
   	@token = tokenizer.generate(8, ('a'..'z').to_a) + Base64.encode64(username + password)
@@ -15,6 +15,7 @@ class TokenGenerateController < ApplicationController
   end
 
   def strong
+
   end
 
 end
