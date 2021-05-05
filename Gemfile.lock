@@ -63,7 +63,7 @@ GEM
       rails-dom-testing (~> 1.0)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
-    json (1.8.3)
+    json (1.8.6)
     libv8 (3.16.14.7)
     loofah (2.0.2)
       nokogiri (>= 1.5.9)
@@ -103,7 +103,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
-    rdoc (4.2.0)
+    rdoc (6.3.1)
     ref (1.0.5)
     sass (3.4.15)
     sass-rails (5.0.3)
@@ -112,9 +112,8 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (~> 1.1)
-    sdoc (0.4.1)
-      json (~> 1.7, >= 1.7.7)
-      rdoc (~> 4.0)
+    sdoc (1.0.0)
+      rdoc (>= 5.0)
     simple_form (3.1.0)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
@@ -160,7 +159,7 @@ DEPENDENCIES
   jquery-rails
   rails (= 4.2.1)
   sass-rails (~> 5.0)
-  sdoc (~> 0.4.0)
+  sdoc (~> 1.0.0)
   simple_form
   spring
   sqlite3
@@ -171,4 +170,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.10.3
+   1.17.3
